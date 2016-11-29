@@ -10,8 +10,8 @@ function main() {
   } else {
     user = 'world';
   }
-  client.login({email: "mydedyhalim@gmail.com", password:"woah"}, function(err, response) {
-    console.log(response.message);
+  client.login({email: "caliandrat9@gsmail.com", password:"qwerty"}, function(err, response) {
+    console.log(response);
   });
 }
 
