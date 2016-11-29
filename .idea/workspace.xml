@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="59911d70-6c61-4973-9a21-7c6e99a949f0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/users.js" afterPath="$PROJECT_DIR$/models/users.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protos/semutrpc.proto" afterPath="$PROJECT_DIR$/protos/semutrpc.proto" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/greeter_client.js" afterPath="$PROJECT_DIR$/test/greeter_client.js" />
     </list>
     <ignored path="grpc-server.iws" />
@@ -51,8 +48,8 @@
       <file leaf-file-name="users.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="92" selection-start-line="27" selection-start-column="92" selection-end-line="27" selection-end-column="92" />
+            <state relative-caret-position="-150">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -61,18 +58,8 @@
       <file leaf-file-name="greeter_client.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/greeter_client.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state relative-caret-position="180">
+              <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -104,8 +91,8 @@
         <option value="$PROJECT_DIR$/protos/users.proto" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/protos/semutrpc.proto" />
-        <option value="$PROJECT_DIR$/models/users.js" />
         <option value="$PROJECT_DIR$/test/greeter_client.js" />
+        <option value="$PROJECT_DIR$/models/users.js" />
       </list>
     </option>
   </component>
@@ -329,7 +316,7 @@
       <option name="presentableId" value="Default" />
       <updated>1480083433789</updated>
       <workItem from="1480083435665" duration="5393000" />
-      <workItem from="1480394646332" duration="16299000" />
+      <workItem from="1480394646332" duration="18522000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1480395375529</created>
@@ -373,11 +360,18 @@
       <option name="project" value="LOCAL" />
       <updated>1480407826445</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add login feature">
+      <created>1480414339980</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1480414339980</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21692000" />
+    <option name="totallyTimeSpent" value="23915000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -411,7 +405,8 @@
     <MESSAGE value="Merge remote-tracking branch 'master/master'&#10;&#10;# Conflicts:&#10;#&#9;appconfig.json&#10;" />
     <MESSAGE value="Add client test file" />
     <MESSAGE value="Add proto file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add proto file" />
+    <MESSAGE value="Add login feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add login feature" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -490,14 +485,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protos/semutrpc.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-239">
@@ -514,6 +501,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/protos/semutrpc.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -524,16 +519,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/greeter_client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="92" selection-start-line="27" selection-start-column="92" selection-end-line="27" selection-end-column="92" />
+        <state relative-caret-position="-150">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>

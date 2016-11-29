@@ -18,8 +18,17 @@ exports.login = function (call, callback) {
                     data = JSON.stringify(data);
                     data = JSON.parse(data);
                     if(md5(pass) == data.Password){
-                        var res = {success: true, message: "Berhasil Login"};
-                        callback(null, {response: JSON.stringify(res)});
+                        app.conn.query('SELECT * FROM tb_session WHERE UserID = "' + data.ID + '" AND EndTime = "0000-00-00 00:00:00"', function (err, _rows, fields) {
+                            if (err) {
+                                console.log(err);
+                            }else {
+                                console.log("shit "+JSON.stringify(_rows[0]));
+                                var sessdata = JSON.stringify(_rows[0]);
+                                sessdata = JSON.parse(sessdata);
+                                var res = {success: true, message: "Berhasil Login!", sessionID: sessdata.ID};
+                                callback(null, {response: JSON.stringify(res)});
+                            }
+                        });
                     }else {
                         var res = {success: false, message: "Username Atau Password tidak cocok!"};
                         callback(null, {response: JSON.stringify(res)});
@@ -32,5 +41,6 @@ exports.login = function (call, callback) {
         });
     }
 }
+
 
 

@@ -10,7 +10,7 @@ function main() {
   } else {
     user = 'world';
   }
-  client.login({email: "caliandrat9@gsmail.com", password:"qwerty"}, function(err, response) {
+  client.login({email: "caliandrat9@gmail.com", password:"qwerty"}, function(err, response) {
     console.log(response);
   });
 }
