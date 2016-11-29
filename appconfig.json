@@ -1,10 +1,12 @@
 {
-  "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
-    "sourceMap": true
+  "grpc": {
+    "server": "localhost",
+    "port" : ":50071"
   },
-  "exclude": [
-    "node_modules"
-  ]
+  "mysql": {
+    "hostname" : "202.138.226.29",
+    "user" : "BSTS",
+    "password" : "Semut123",
+    "database" : "bsts_new"
+  }
 }
