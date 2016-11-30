@@ -2,7 +2,7 @@ var PROTO_PATH = __dirname + '/protos/semutrpc.proto';
 var mysql = require('mysql');
 var grpc = require('grpc');
 var appconfig = require('./appconfig.json');
-var hello_proto = grpc.load(PROTO_PATH).semutrpc;
+var m_proto = grpc.load(PROTO_PATH).semutrpc;
 var server = new grpc.Server();
 var connection = mysql.createConnection({
   host     : appconfig.mysql['hostname'],
@@ -17,11 +17,8 @@ connectToMysql();
 var users = require('./models/users');
 
 
-
-
-
 function connectToGrpc(){
-  server.addProtoService(hello_proto.UsersManagement.service, {login: users.login});
+  server.addProtoService(m_proto.UsersManagement.service, {login: users.login});
   server.bind(appconfig.grpc['server']+appconfig.grpc['port'], grpc.ServerCredentials.createInsecure());
   server.start();
   console.log("Running gRPC Server on Port "+appconfig.grpc['port']);
@@ -42,6 +39,5 @@ var main = function () {
   connectToGrpc();
 
 }
-
 main();
 
