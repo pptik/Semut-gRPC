@@ -6,7 +6,7 @@ var moment 	= require('moment');
 exports.login = function (call, callback) {
     var email = call.request.email;
     var pass = call.request.password;
-    console.log(JSON.parse(JSON.stringify(call)));
+    console.log("Request Login : \n"+JSON.stringify(call));
     if(email == null || pass == null){
         var res = {success: false, message: 'Incomplete Parameter'}
         callback(null, {response: res});
@@ -103,6 +103,3 @@ exports.login = function (call, callback) {
         });
     }
 }
-
-
-
