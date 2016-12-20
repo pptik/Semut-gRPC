@@ -103,3 +103,26 @@ exports.login = function (call, callback) {
         });
     }
 }
+
+
+exports.register = function (call, callback) {
+    var email = call.request.email;
+    var pass = call.request.password;
+    var phonenumber = call.request.phonenumber;
+    var gender = call.request.gender;
+    var birthday = call.request.birthday;
+    var password = call.request.password;
+
+    app.conn.query('SELECT * FROM tb_user WHERE Email="'+email+'"', function (err, rows, fields) {
+        if (err) {
+            console.log(err);
+        } else {
+            if(rows.length > 0) {
+                var res = {success: false, message: "Email sudah digunakan!"};
+                callback(null, {response: JSON.stringify(res)});
+            }else {
+
+            }
+        }
+    });
+}

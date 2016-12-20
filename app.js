@@ -18,7 +18,7 @@ var users = require('./models/users');
 
 
 function connectToGrpc(){
-  server.addProtoService(m_proto.UsersManagement.service, {login: users.login});
+  server.addProtoService(m_proto.UsersManagement.service, {login: users.login, register: users.register});
   // TODO : Add secure connection using GoogleAuth
   server.bind(appconfig.grpc['server']+appconfig.grpc['port'], grpc.ServerCredentials.createInsecure());
   server.start();
