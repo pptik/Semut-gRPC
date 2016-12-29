@@ -3,7 +3,7 @@ var grpc = require('grpc');
 var hello_proto = grpc.load(PROTO_PATH).semutrpc;
 
 function main() {
-  var client = new hello_proto.UsersManagement('167.205.7.226:50071', grpc.credentials.createInsecure());
+  var client = new hello_proto.UsersManagement('172.20.10.10:50071', grpc.credentials.createInsecure());
   var user;
   if (process.argv.length >= 3) {
     user = process.argv[2];

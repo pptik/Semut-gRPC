@@ -1,9 +1,9 @@
 syntax = "proto3";
 
 option java_multiple_files = true;
-option java_package = "org.pptik.semutwebservice";
-option java_outer_classname = "LoginProto";
-option objc_class_prefix = "LPS";
+option java_package = "project.bsts.semutservice";
+option java_outer_classname = "SemutProto";
+option objc_class_prefix = "SEMPROT";
 
 package semutrpc;
 
